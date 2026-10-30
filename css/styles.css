@@ -1,0 +1,79 @@
+/* Estilos complementares ao Tailwind */
+.nav-link {
+  color: #475569;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-link:hover {
+  color: #0284c7;
+  background: #f0f9ff;
+}
+.nav-link.active {
+  color: #0284c7;
+  background: #e0f2fe;
+  font-weight: 600;
+}
+
+.lang-btn[aria-pressed="true"] {
+  background: #0284c7;
+  color: white;
+}
+
+/* Foco acessível */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+/* Suavizar scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tabela estilizada */
+.table-nice {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.table-nice th,
+.table-nice td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+.table-nice th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #1e293b;
+}
+.table-nice tr:hover td {
+  background: #f8fafc;
+}
+
+/* Formulário */
+.form-input {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: white;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.form-input:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+  outline: none;
+}
+
+/* Cards de recurso */
+.resource-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.resource-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08);
+}
